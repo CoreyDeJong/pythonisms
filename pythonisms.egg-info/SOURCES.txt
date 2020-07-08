@@ -1,0 +1,7 @@
+README.md
+setup.py
+pythonisms/__init__.py
+pythonisms.egg-info/PKG-INFO
+pythonisms.egg-info/SOURCES.txt
+pythonisms.egg-info/dependency_links.txt
+pythonisms.egg-info/top_level.txt
