@@ -26,12 +26,12 @@ class LinkedList:
 
     def __str__(self):
 
-        out = ""
+        output = ""
 
         for value in self:
-            out += f"[ {value} ] -> "
+            output += f"[ {value} ] -> "
 
-        return out + "None"
+        return output + "None"
 
     def __len__(self):
         return len(list(iter(self)))
@@ -93,7 +93,7 @@ def sarcastic_decorator(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         orig_val = func(*args, **kwargs)
-        return f'Sure, I\'d love to do "{orig_val}"'
+        return f'Sure, that sounds like fun to "{orig_val}"'
 
     return wrapper
 
@@ -101,13 +101,12 @@ def sarcastic_decorator(func):
 @emphasize
 @sarcastic_decorator
 def proclaim(txt):
-    # print('proclaim starting')
     return txt
 
 @sarcastic_decorator
 @emphasize
-def restaurant_suggestion(cuisine):
-    return cuisine
+def restaurant_suggestion(food):
+    return food
 
 
 
