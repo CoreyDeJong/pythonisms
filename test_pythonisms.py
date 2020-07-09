@@ -11,6 +11,8 @@ def test_for_in():
     for food in foods:
         foods_list.append(food)
 
+    # foods_list = (food for food in foods if food)
+
     assert foods_list == ["apple","banana","cucumber"]
 
 
@@ -43,7 +45,7 @@ def test_filter():
 
     nums = LinkedList(range(1,21))
 
-    odds = [num for num in nums if num % 2]
+    odds = [number for number in nums if number % 2]
 
     assert odds == [1,3,5,7,9,11,13,15,17,19]
 
@@ -85,7 +87,7 @@ def test_get_item():
 
     foods = LinkedList(["apple","banana","cucumber"])
 
-    assert foods[0] == "apple"
+    assert foods[2] == "cucumber"
 
 def test_get_item_out_of_range():
 
